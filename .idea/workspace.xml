@@ -5,9 +5,6 @@
       <config />
     </shared>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/twistedpenguins/src/com/me/twistedpenguins/TwistedPenguins.java" line="119" mnemonic="7" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="4d8cee69-fe0d-4a1b-822e-afc59a5d6c1e" name="Default" comment="" />
     <ignored path="twistedpenguins2.iws" />
@@ -84,7 +81,7 @@
       <file leaf-file-name="TwistedPenguins.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/twistedpenguins/src/com/me/twistedpenguins/TwistedPenguins.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="20" selection-start="3607" selection-end="3607" vertical-scroll-proportion="0.37444934" vertical-offset="1445" max-vertical-offset="2686">
+            <state line="75" column="56" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.12481645" vertical-offset="1190" max-vertical-offset="2465">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1670#1685#0" expanded="true" />
@@ -608,7 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twistedpenguins/src/com/me/twistedpenguins/TwistedPenguins.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="3607" selection-end="3607" vertical-scroll-proportion="0.37444934" vertical-offset="1445" max-vertical-offset="2686">
+        <state line="75" column="56" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.12481645" vertical-offset="1190" max-vertical-offset="2465">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1670#1685#0" expanded="true" />

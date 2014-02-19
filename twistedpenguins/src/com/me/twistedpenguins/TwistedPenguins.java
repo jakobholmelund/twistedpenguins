@@ -73,19 +73,12 @@ public class TwistedPenguins implements ApplicationListener {
 
     private void buildModel(){
         ModelBuilder modelBuilder = new ModelBuilder();
-//        twister = modelBuilder.createCylinder(2f, 10f, 2f, 40,
-//                new Material(),
-//                Usage.Position | Usage.Normal | Usage.TextureCoordinates);
+        twister = modelBuilder.createCylinder(1f, 10f, 1f, 40,
+                new Material(),
+                Usage.Position | Usage.Normal | Usage.TextureCoordinates);
 
-        //ModelInstance twisterInstance1 = new ModelInstance(twister, 0,0,0);
-        //instances.add(twisterInstance1);
-
-
-
-        float sideLength = 2f;
-        float pointAngle = 45f;
-
-        Vector3 currentX = new Vector3(0,0,1);
+        ModelInstance twisterInstance1 = new ModelInstance(twister, 0,0,0);
+        instances.add(twisterInstance1);
 
         modelBuilder.begin();
 
@@ -103,7 +96,7 @@ public class TwistedPenguins implements ApplicationListener {
         MeshPartBuilder test = modelBuilder.part("triangle", GL10.GL_LINES, Usage.Position | Usage.Normal, new Material(ColorAttribute.createDiffuse(new Color(MathUtils.random(0, 1), MathUtils.random(0, 1), MathUtils.random(0, 1), 0))));
 
         for(float i = 0;i<1000;i++){
-            test.line(new Vector3((float) (cos(i/100) * innerWidth),(float) (innerWidth * sin(i/100)),b*i/100), new Vector3((float) (cos(i/100) * outerWidth),(float) (outerWidth * sin(i/100)),b*i/100));
+            test.line(new Vector3((float) (cos(i/100) * innerWidth),b*i/100,(float) (innerWidth * sin(i/100))), new Vector3((float) (cos(i/100) * outerWidth),b*i/100,(float) (outerWidth * sin(i/100))));
         }
 
 
@@ -113,12 +106,6 @@ public class TwistedPenguins implements ApplicationListener {
 	private void doneLoading() {
 
         buildModel();
-//        twister = new ModelInstance(assets.get("data/test3.g3db", Model.class));
-//        //twister.materials.first().set(ColorAttribute.createDiffuse(Color.RED));
-//        twister.transform.setToRotation(Vector3.Y, 180).trn(0, 0, 6f);
-//        twister.transform.setToTranslation(0,0,0);
-//        instances.add(twister);
- 
         loading = false;
     }
 	
