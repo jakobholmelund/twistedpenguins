@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-android/bin/dexedLibs/gdx-4ce9aef732dc3bff50eddc04748487c1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-android/bin/dexedLibs/bodyeditor-loader-e62673e82fbb18558afbcce4aa0ba5b2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-android/bin/dexedLibs/gdx-backend-android-8b179b47627fa9b7e97c09d17ed97f14.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-android/bin/dexedLibs/gdx-backend-android-sources-6dc82723a825e121c6c54c6948134b30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-android/bin/dexedLibs/tween-engine-api-1362e7dd80a60a66f9e6607745374140.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

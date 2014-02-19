@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/bodyeditor-loader.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/tween-engine-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/gdx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/gwt-servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/gdx-backend-gwt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/gdx-backend-gwt-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/tween-engine-api-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/bodyeditor-loader-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins-html/war/WEB-INF/lib/gdx-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="libgdx shared">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/bodyeditor-loader-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/gdx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/bodyeditor-loader.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/tween-engine-api-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/gdx-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/twistedpenguins/libs/tween-engine-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

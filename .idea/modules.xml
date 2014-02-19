@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/twistedpenguins/twistedpenguins.iml" filepath="$PROJECT_DIR$/twistedpenguins/twistedpenguins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twistedpenguins-android/twistedpenguins-android.iml" filepath="$PROJECT_DIR$/twistedpenguins-android/twistedpenguins-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twistedpenguins-desktop/twistedpenguins-desktop.iml" filepath="$PROJECT_DIR$/twistedpenguins-desktop/twistedpenguins-desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twistedpenguins-html/twistedpenguins-html.iml" filepath="$PROJECT_DIR$/twistedpenguins-html/twistedpenguins-html.iml" />
+    </modules>
+  </component>
+</project>
+
