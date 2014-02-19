@@ -27,6 +27,8 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.graphics.VertexAttributes.Usage;
 
+import static java.lang.Math.*;
+
 public class TwistedPenguins implements ApplicationListener {
 	public AssetManager assets;
 	public ModelBatch modelBatch;
@@ -80,32 +82,32 @@ public class TwistedPenguins implements ApplicationListener {
 
 
 
-            float sideLength = 2f;
-            float pointAngle = 45f;
+        float sideLength = 2f;
+        float pointAngle = 45f;
 
-            Vector3 currentX = new Vector3(0,0,1);
+        Vector3 currentX = new Vector3(0,0,1);
+
+        modelBuilder.begin();
+
+        MeshPartBuilder test1 = modelBuilder.part("box", GL10.GL_TRIANGLES, Usage.Position | Usage.Normal, new Material(ColorAttribute.createDiffuse(new Color(MathUtils.random(0, 1), MathUtils.random(0, 1), MathUtils.random(0, 1), 0))));
+        test1.box(0, 0, 0, 0.5f,0.5f,0.5f);
+
+        instances.add(new ModelInstance(modelBuilder.end(), 0,0,0));
+
+        modelBuilder.begin();
+
+        float innerWidth = 0.5f;
+        float outerWidth = 2;
+        float b = 0.2f;
+
+        MeshPartBuilder test = modelBuilder.part("triangle", GL10.GL_LINES, Usage.Position | Usage.Normal, new Material(ColorAttribute.createDiffuse(new Color(MathUtils.random(0, 1), MathUtils.random(0, 1), MathUtils.random(0, 1), 0))));
+
+        for(float i = 0;i<1000;i++){
+            test.line(new Vector3((float) (cos(i/100) * innerWidth),(float) (innerWidth * sin(i/100)),b*i/100), new Vector3((float) (cos(i/100) * outerWidth),(float) (outerWidth * sin(i/100)),b*i/100));
+        }
 
 
-            modelBuilder.begin();
-
-            MeshPartBuilder test1 = modelBuilder.part("box", GL10.GL_TRIANGLES, Usage.Position | Usage.Normal, new Material(ColorAttribute.createDiffuse(new Color(MathUtils.random(0, 1), MathUtils.random(0, 1), MathUtils.random(0, 1), 0))));
-            test1.box(0, 0, 0, 0.5f,0.5f,0.5f);
-
-            instances.add(new ModelInstance(modelBuilder.end(), 0,0,0));
-
-            for(int i=0;i<10;i++){
-                modelBuilder.begin();
-
-                MeshPartBuilder test = modelBuilder.part("triangle", GL10.GL_TRIANGLES, Usage.Position | Usage.Normal, new Material(ColorAttribute.createDiffuse(new Color(MathUtils.random(0, 1), MathUtils.random(0, 1), MathUtils.random(0, 1), 0))));
-                Vector3 v1 = new Vector3((float) Math.cos(i), (float)Math.sin(i), 0);
-                Vector3 v2 = new Vector3((float) Math.cos(++i), (float)Math.sin(++i), 0);
-                Vector3 v3 = new Vector3(0, 0, 0);
-
-                test.triangle(v1, v2, v3);
-
-                instances.add(new ModelInstance(modelBuilder.end(), 0,0,0));
-            }
-        //}
+        instances.add(new Screw(modelBuilder.end(), 0,0,0));
     }
 
 	private void doneLoading() {
